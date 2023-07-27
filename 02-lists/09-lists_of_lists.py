@@ -11,7 +11,8 @@ grades = [[5,6,4,5,6,7],[6,7,6,5,6,4],[6,6,5,6,7,7]]
 # El estudiante Gay tiene promedio ZZ
 averages = []
 for student_grades in grades:
-  averages.append(sum(student_grades)/len(student_grades))
+  average = sum(student_grades)/len(student_grades)
+  averages.append(average)
 
-for position in range(len(students)):
-  print("El estudiante", students[position], "tiene promedio",averages[position])
+for num in range(len(students)):
+  print("El estudiante", students[num], "tiene promedio",averages[num])
