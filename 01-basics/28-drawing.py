@@ -1,15 +1,14 @@
-for line in range(10):
-  row = ""
-  for col in range(10):
-    if line % 2 == 0:
-      if col % 2 == 0:
-        row += " "
-      else:
-        row += "*"
+for row in range(11):
+  line = ""
+  for col in range(11):
+    if (col == row or col + row == 10):
+      line += "*"
+    elif row == 5 or col == 5:
+      line += "*"
     else:
-      if col % 2 == 0:
-        row += "*"
-      else:
-        row += " "
-  print(row)
+      line += " "
+  print(line)
+
+print("Hola gaby")
+
 
