@@ -10,12 +10,17 @@ class Princess:
   def fight(self, enemy):
     enemy.life -= 1 
 
-if __name__ == "__main__":
-
+def main():
+  print("Módulo de princesas")
+  
   jazmin = Princess("Jazmine", 20) 
-  cenicienta = Princess("Cenicienta", 24)
-  mulan = Princess("Mulán", 21)
-
   print(jazmin.ending())
-  print(cenicienta.ending())
+  
+  mulan = Princess("Mulán", 21)
   print(mulan.ending())
+  
+  print(Princess("Cenicienta", 24).ending())
+
+if __name__ == "__main__":
+  main()
+  
